@@ -1,40 +1,52 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
-    <meta charset="utf-8">
-	<title>َSafeMaps | HOME</title>
-	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-	<link rel="stylesheet" href="home.css">
+  <head>
+    <meta charset="utf-8" />
+    <title>َSafeMaps | HOME</title>
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="home.css" />
   </head>
   <body>
-	<link href="https://fonts.googleapis.com/css?family=Antic" rel="stylesheet" type="text/css">
-	
-	<div class="header">
-	  <a href="#default" class="logo">SafeMaps</a>
-	  <div class="header-right">
-	    <a class="active" href="#/Users/riasingh/Desktop/financely/frontend/contact.html">Home</a>
-	    <a href="/profile.html">Profile</a>
+
+    <div class="header">
+		<a href="#default" class="logo">SafeMaps</a>
+		<div class="header-right">
+		  <a
+			class="active"
+			href="/home.html"
+			>Home</a
+		  >
+		  <a href="/profile.html">Profile</a>
+		</div>
 	  </div>
-	</div>
 
+    <div id="map"></div>
 
-	<div class="container">
-		<section>
-			<div class="Map">
-				<div class="img">
-					<a href ="">
-					<img class="statimg"  width="100%" src="/map2.gif"></a>
-                    
-				</div>
-				<div class="text">
-					<h3>Map</h3>
-					<p></p>	
-				</div>
-			</div>
-		</section>
-	</div>
-	<footer>
-		<p><i>SafeMaps, your safer way Home</i></p>
-	</footer> 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbhX7Ml0xj6jpqeZBWuR4s8x5RidKuGTE&libraries=visualization&callback=initMap"
+      defer></script>
+    <script src="san-francisco.js"></script>
+    <script type="text/javascript" src="MakeMap.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Antic"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <div class="container">
+      <section>
+        <div class="Map">
+          <container id="Map"> </container>
+          <map id="map"></map>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p><i>SafeMaps, your safer way Home</i></p>
+    </footer>
   </body>
 </html>
